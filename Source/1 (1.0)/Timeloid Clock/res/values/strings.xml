@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Timeloid Clock</string>
+     <string name="config_text">Choose a flavour:</string>
+     <string name="config_button">SAVE</string>
+    
+    <string-array name="flavours">
+        <item>Grapefruit</item>
+        <item>Blueberry</item>
+        <item>Cocoa</item>
+        <item>Kiwi</item>
+        <item>Mango</item>
+    </string-array>
+</resources>

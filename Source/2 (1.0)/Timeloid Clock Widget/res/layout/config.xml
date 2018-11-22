@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal">
+	        
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:paddingTop="6dp"
+		        android:paddingLeft="10dp"
+		    	android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:text="@string/config_text" />
+		
+		    <Spinner
+		        android:id="@+id/flavours"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+	
+	    </LinearLayout>
+	    
+	    <ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+		    
+			<RelativeLayout
+	   			android:id="@+id/rlayout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:paddingTop="10dp">
+				
+				<ImageView
+					android:id="@+id/h"
+					android:layout_width="120dp"
+					android:layout_height="112dp"
+					android:layout_marginLeft="10dp" />
+				
+			    <ImageView
+					android:id="@+id/m"
+					android:layout_width="120dp"
+					android:layout_height="112dp"
+					android:layout_marginTop="-27dp"
+					android:layout_marginLeft="25dp"
+					android:layout_below="@id/h" />
+				
+			    <ImageView
+					android:id="@+id/mm"
+					android:layout_width="120dp"
+					android:layout_height="112dp"
+					android:layout_marginTop="-30dp"
+					android:layout_below="@id/m" />
+				
+			    <ImageView
+			        android:id="@+id/shadow"
+					android:layout_width="10dp"
+					android:layout_height="90dp"
+					android:layout_marginLeft="-13dp"
+					android:layout_marginTop="-15dp"
+					android:layout_below="@id/m"
+					android:layout_toRightOf="@id/mm" />
+				
+			    <ImageView
+					android:id="@+id/s"
+					android:layout_width="85dp"
+					android:layout_height="92dp"
+					android:layout_marginLeft="-8dp"
+					android:layout_marginTop="15dp"
+					android:layout_below="@id/m"
+					android:layout_toRightOf="@id/mm" />
+			    
+			</RelativeLayout>
+		</ScrollView>
+	</LinearLayout>
+	
+	<Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/config_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+	
+</RelativeLayout>
